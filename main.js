@@ -1,44 +1,16 @@
-class Matematica 
+function teste(x)
 {
-    static soma(a, b)
-    {
-        return a + b;
+    let y = 2;
+
+    if(x > 5){
+        let y = 4;
+        console.log(x, y);
     }
 }
 
-console.log(Matematica.soma(1, 2));
+// console.log(y);
+teste(10);
 
-// class List 
-// {
-//     constructor()
-//     {
-//         this.data = [];
-//     }
-
-//     add(data){
-//         this.data.push(data);
-//         console.log(this.data);
-//     }
-// }
-
-// class TodoList extends List 
-// {
-//     constructor()
-//     {
-//         super();
-//         this.usuario = 'Kauan';
-//     }
-
-//     mostraUsuario()
-//     {
-//         console.log(this.usuario);
-//     }
-// }
-
-// var MinhaLista = new TodoList();
-
-// document.getElementById('novotodo').onclick = () => {
-//     MinhaLista.add('Novo todo');
-// };
-
-// MinhaLista.mostraUsuario();
+const usuario = { nome: 'Kauan' };
+usuario.nome = 'Cleiton';
+console.log(usuario);
