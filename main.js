@@ -1,16 +1,26 @@
-function teste(x)
-{
-    let y = 2;
+const arr = [1, 3, 4, 5, 8, 10];
 
-    if(x > 5){
-        let y = 4;
-        console.log(x, y);
-    }
-}
+const newArr = arr.map(function(item, index) {
+    return item + index;
+});
 
-// console.log(y);
-teste(10);
+console.log(newArr);
 
-const usuario = { nome: 'Kauan' };
-usuario.nome = 'Cleiton';
-console.log(usuario);
+const sum = arr.reduce(function(total, next){
+    return total + next;
+});
+
+console.log(sum);
+
+const filter = arr.filter(function(item){
+    return item % 2 === 0;
+});
+
+console.log(filter);
+
+const find = arr.find(function(item){
+    return item === 3;
+});
+
+console.log(find);
+
